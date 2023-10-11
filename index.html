@@ -22,44 +22,41 @@
         margin: 0;
         text-align: center;
         font-size: 1.15em;
+        background-color: rgb(247, 247, 247);
       }
 
       header {
         background: var(--highlightcolor);
-      }
-
-      .description {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 15px 15px 0 0;
       }
 
       h1,
-      h3 {
+      h2,
+      h3,
+      .description {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
       a {
         font-style: italic;
+        color: black;
       }
 
       h1 {
         margin: 0;
-        padding: 10px;
-      }
-
-      section a {
-        color: black;
+        padding: 20px;
       }
 
       article {
         text-align: left;
+        border-bottom: var(--highlightcolor) solid 1px;
       }
 
-      article p {
-        margin-top: 6px;
-      }
-
-      h3 {
-        margin-bottom: 5px;
+      ul {
+        list-style: none;
+        padding-inline-start: 0;
+        padding-left: 40px;
+        padding-right: 40px;
       }
 
       footer {
@@ -71,41 +68,53 @@
       }
 
       .main {
-        padding: 40px;
+        background-color: white;
         padding-top: 0;
+        width: 80%;
+        margin: auto;
+        margin-top: 5px;
+        border: silver solid 1px;
+        border-radius: 15px;
+        margin-bottom: 80px;
       }
 
       .description {
         margin-top: 20px;
+        padding: 20px;
         text-align: center;
+        font-size: 1.25rem;
       }
 
       .last {
-        padding-bottom: 50px;
+        border-bottom: none;
       }
 
       @media screen and (max-width: 800px) {
-        ul {
-          padding-left: 0;
+        .main {
+          width: 100%;
+          border: none;
+          margin-top: 0;
         }
 
-        .main {
-          padding: 10px;
-          width: 100%;
+        header {
+          border-radius: 0 0 0 0;
         }
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Michael Phillips - Portfolio</h1>
-    </header>
-
     <section class="main">
-      <article class="description">
-        I am a frount-end developer with experience in javascript
-        html c# react blazor and aws.
-      </article>
+      <header>
+        <h1>Michael Phillips</h1>
+      </header>
+
+      <p class="description">
+        I am a <i>front-end developer</i> with experience in
+        <b>javascript html,c#,react,blazor and aws</b>.
+        <a href="CV.pdf" target="_blank">Download CV</a>
+      </p>
+
+      <h2>Sample apps and projects.</h2>
 
       <ul>
         <li>
@@ -114,11 +123,10 @@
               target="_blank"
               href="https://tim-vine-joke-machine.s3.eu-west-2.amazonaws.com/index.html"
             >
-              <h3>Tim Vine Jokes</h3></a
-            >
+              <h3>Tim Vine Jokes</h3></a>
             <p>
-              A reactjs App that selects random Tim Vine Jokes. Hosted on an AWS
-              buckets.
+              A <b>react App</b> that selects random <i>Tim Vine Jokes</i>.
+              Hosted on an <b>AWS bucket</b>.
             </p>
             <p class="git-link">
               <img
@@ -129,7 +137,7 @@
               <a
                 href="https://github.com/michaelphillips4/tim-vine-joke-machine"
                 style="vertical-align: middle"
-                >see code on github (tim-vine-joke-machine)</a
+                >see code on github</a
               >
             </p>
           </article>
@@ -144,9 +152,9 @@
               <h3>Poem Generator</h3></a
             >
             <p>
-              A reactjs App that creates grammatically correct nonsense poems.
-              Inspired by an article by Noam Chomsky on grammer validating
-              meaning. React and AWS amplify.
+              A <b>react App</b> that creates grammatically correct nonsense
+              poems. Inspired by an article by <i>Noam Chomsky</i> on grammar
+              validating meaning. <b>React and AWS amplify</b>.
             </p>
 
             <p class="git-link">
@@ -156,9 +164,9 @@
                 style="vertical-align: middle"
               />
               <a
-                href="https://github.com/michaelphillips4/langauge-oddities"
+                href="https://github.com/michaelphillips4/language-oddities"
                 style="vertical-align: middle"
-                >see code on github (langauge-oddities)</a
+                >see code on github</a
               >
             </p>
           </article>
@@ -173,9 +181,10 @@
               <h3>Form with Validation</h3></a
             >
             <p>
-              Simple form in React. Demonstrates validation both at an input
-              field level and for the whole form. It uses react bootstrap. The
-              repo uses AWS amplify to build and host the app.
+              Simple form in <b>react</b>. Demonstrates validation both at an
+              input field level and for the whole form. It uses
+              <b>react bootstrap</b>. The repo uses <b>AWS amplify</b> to build
+              and host the app.
             </p>
             <p class="git-link">
               <img
@@ -184,9 +193,9 @@
                 style="vertical-align: middle"
               />
               <a
-                href="https://github.com/michaelphillips4/BootStrapForm"
+                href="https://github.com/michaelphillips4/boot-strap-form"
                 style="vertical-align: middle"
-                >see code on github (BootStrapForm)</a
+                >see code on github</a
               >
             </p>
           </article>
@@ -201,9 +210,9 @@
             >
 
             <p>
-              Some of my guitar playing. The code for the site uses reactjs and
-              uses an s3 bucket to store the mp3 files and a Amazon Gateway web
-              api to read the s3 bucket.
+              Some of my guitar playing. The code for the site uses
+              <b>react</b> and uses an <b>s3 bucket</b> to store the mp3 files
+              and a <b>Amazon Gateway web api</b> to read the <b>s3 bucket</b>.
             </p>
             <p class="git-link">
               <img
@@ -220,7 +229,7 @@
           </article>
         </li>
         <li>
-          <article>
+          <article class="last">
             <a href="https://www.youtube.com/@MichaelPhillips4" target="_blank">
               <h3>Videos</h3></a
             >
@@ -229,12 +238,6 @@
               My YouTube account combines my interest in Wildlife,Music and
               Photography.
             </p>
-          </article>
-        </li>
-        <li>
-          <article class="last">
-            <a href="CV.pdf" target="_blank"> <h3>CV</h3></a>
-            <p>Download CV</p>
           </article>
         </li>
       </ul>
