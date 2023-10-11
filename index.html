@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Michael Phillips - area2.co.uk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --highlightcolor: #ddecc7;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        text-align: center;
+        font-size: 1.15em;
+      }
+
+      header {
+        background: var(--highlightcolor);
+      }
+
+      .description {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h1,
+      h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      a {
+        font-style: italic;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 10px;
+      }
+
+      section a {
+        color: black;
+      }
+
+      article {
+        text-align: left;
+      }
+
+      article p {
+        margin-top: 6px;
+      }
+
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      footer {
+        padding: 15px;
+        width: 100%;
+        background: var(--highlightcolor);
+        position: fixed;
+        bottom: 0;
+      }
+
+      .main {
+        padding: 40px;
+        padding-top: 0;
+      }
+
+      .description {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .last {
+        padding-bottom: 50px;
+      }
+
+      @media screen and (max-width: 800px) {
+        ul {
+          padding-left: 0;
+        }
+
+        .main {
+          padding: 10px;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Michael Phillips - Portfolio</h1>
+    </header>
+
+    <section class="main">
+      <article class="description">
+        I am a frount-end developer with experience in javascript
+        html c# react blazor and aws.
+      </article>
+
+      <ul>
+        <li>
+          <article>
+            <a
+              target="_blank"
+              href="https://tim-vine-joke-machine.s3.eu-west-2.amazonaws.com/index.html"
+            >
+              <h3>Tim Vine Jokes</h3></a
+            >
+            <p>
+              A reactjs App that selects random Tim Vine Jokes. Hosted on an AWS
+              buckets.
+            </p>
+            <p class="git-link">
+              <img
+                src="github-mark.png"
+                width="20"
+                style="vertical-align: middle"
+              />
+              <a
+                href="https://github.com/michaelphillips4/tim-vine-joke-machine"
+                style="vertical-align: middle"
+                >see code on github (tim-vine-joke-machine)</a
+              >
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a
+              target="_blank"
+              href="https://main.d36t2akt0e9tcz.amplifyapp.com/PoemGenerator"
+            >
+              <h3>Poem Generator</h3></a
+            >
+            <p>
+              A reactjs App that creates grammatically correct nonsense poems.
+              Inspired by an article by Noam Chomsky on grammer validating
+              meaning. React and AWS amplify.
+            </p>
+
+            <p class="git-link">
+              <img
+                src="github-mark.png"
+                width="20"
+                style="vertical-align: middle"
+              />
+              <a
+                href="https://github.com/michaelphillips4/langauge-oddities"
+                style="vertical-align: middle"
+                >see code on github (langauge-oddities)</a
+              >
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a
+              target="_blank"
+              href="https://master.d1aacpjwad15j8.amplifyapp.com/"
+            >
+              <h3>Form with Validation</h3></a
+            >
+            <p>
+              Simple form in React. Demonstrates validation both at an input
+              field level and for the whole form. It uses react bootstrap. The
+              repo uses AWS amplify to build and host the app.
+            </p>
+            <p class="git-link">
+              <img
+                src="github-mark.png"
+                width="20"
+                style="vertical-align: middle"
+              />
+              <a
+                href="https://github.com/michaelphillips4/BootStrapForm"
+                style="vertical-align: middle"
+                >see code on github (BootStrapForm)</a
+              >
+            </p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a
+              target="_blank"
+              href="https://master.d1rmcfyceeugi7.amplifyapp.com/"
+            >
+              <h3>Guitar Music</h3></a
+            >
+
+            <p>
+              Some of my guitar playing. The code for the site uses reactjs and
+              uses an s3 bucket to store the mp3 files and a Amazon Gateway web
+              api to read the s3 bucket.
+            </p>
+            <p class="git-link">
+              <img
+                src="github-mark.png"
+                width="20"
+                style="vertical-align: middle"
+              />
+              <a
+                href="https://github.com/michaelphillips4/area2"
+                style="vertical-align: middle"
+                >see code on github (area2)</a
+              >
+            </p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="https://www.youtube.com/@MichaelPhillips4" target="_blank">
+              <h3>Videos</h3></a
+            >
+
+            <p>
+              My YouTube account combines my interest in Wildlife,Music and
+              Photography.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="last">
+            <a href="CV.pdf" target="_blank"> <h3>CV</h3></a>
+            <p>Download CV</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <footer>michael.phillips4@yahoo.co.uk</footer>
+  </body>
+</html>
