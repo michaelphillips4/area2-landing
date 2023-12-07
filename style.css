@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --highlightcolor: #ade5f7;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 1.15em;
+    background-color: rgb(247, 247, 247);
+  }
+
+  header {
+    background: var(--highlightcolor);
+    border-radius: 15px 15px 0 0;
+  }
+
+  h1,
+  h3,
+  .description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  a {
+    font-style: italic;
+    color: black; 
+  }
+
+  h1 {
+    font-size: 5vmax;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 4px 4px 10px grey;
+  }
+
+ 
+  article {
+    text-align: left;
+    border-bottom: var(--highlightcolor) solid 1px;
+  }
+
+  ul {
+    list-style: none;
+    padding-inline-start: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  footer {
+    padding: 15px;
+    width: 100%;
+    background: var(--highlightcolor);
+    position: fixed;
+    bottom: 0;
+    text-shadow: 4px 4px 10px grey;
+  }
+
+  .main {
+    background-color: white;
+    padding-top: 0;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: silver solid 1px;
+    border-radius: 15px;
+    margin-bottom: 80px;
+   
+  }
+
+  .description {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .last {
+    border-bottom: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .main {
+      width: 100%;
+      border: none;
+      margin-top: 0;
+    }
+
+    header {
+      border-radius: 0 0 0 0;
+    }
+  }
