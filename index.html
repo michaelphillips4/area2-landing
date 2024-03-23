@@ -1,130 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Michael Phillips - area2.co.uk</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-    />
-     <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Michael Phillips</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #333;
+        color: #fff;
+        width:100%;
+      }
+      h1 {
+        margin: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: left;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        padding: 20px 0;
+        width: 100%;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #333;
+      }
+
+      iframe {
+        margin-bottom: 60px;
+       
+      }
+      .youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* * {border:1px solid red} */
+    </style>
   </head>
   <body>
+    <header>
+      <h1>Michael Phillips</h1>
+    </header>
 
-    <section class="main">
-     
-      <header>
-        <h1>Michael Phillips</h1>
-      </header>
-
-      <p class="description">
-        I am a <i>front-end developer</i> with extensive experience in
-        <b>javascript, typescript, html, c#, react, blazor and aws</b>.
-        <a href="CV.pdf" target="_blank">Download CV</a>
+    <div class="container">
+      <p>
+        Guitar Music and Wildlife Photography, from around the world and around
+        the corner. For more info and bookings please go to
+        <a href="https://www.instagram.com/michaelphillips4/">Instagram</a> or
+        <a href="https://www.youtube.com/@michaelphillips4">YouTube</a>
       </p>
-     
-      <ul>
-        <li>
-          <article>
-            <a
-              target="_blank"
-              href="https://tim-vine-joke-machine.s3.eu-west-2.amazonaws.com/index.html"
-            >
-              <h3>Tim Vine Jokes</h3></a>
-            <p>
-              A <b>react App</b> that selects random <i>Tim Vine Jokes</i>.
-              Hosted on an <b>AWS bucket</b>.
-            </p>
-            <p class="git-link">
-              <img
-                src="github-mark.png"
-                width="20"
-                style="vertical-align: middle"
-              />
-              <a
-                href="https://github.com/michaelphillips4/tim-vine-joke-machine"
-                style="vertical-align: middle"
-                >see code on github</a
-              >
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <a
-              target="_blank"
-              href="https://main.d2gnyf28io54nc.amplifyapp.com/"
-            >
-              <h3>Poem Generator</h3></a
-            >
-            <p>
-              A <b>react and typescript App</b> that creates grammatically correct nonsense
-              poems. Inspired by an article by <i>Noam Chomsky</i> on grammar
-              validating meaning. <b>React and AWS amplify</b>.
-            </p>
-
-            <p class="git-link">
-              <img
-                src="github-mark.png"
-                width="20"
-                style="vertical-align: middle"
-              />
-              <a
-                href="https://github.com/michaelphillips4/language-oddities"
-                style="vertical-align: middle"
-                >see code on github</a
-              >
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <a
-              target="_blank"
-              href="https://main.d1atagnouxkgdw.amplifyapp.com/"
-            >
-              <h3>Forms with Validation and Internationalization</h3></a
-            >
-            <p>
-              Some simple forms in <b>react and typescript</b>. This demonstrates form validation both at an
-              input field level and for the whole form. It uses hide and show logic for various input elements.
-              The app in be be in either Italian or English demonstrating the use of <b>react-intl</b>. It uses
-              <b>simple.css </b> and the repo uses <b>AWS amplify</b> to build and host the app.
-            </p>
-            <p class="git-link">
-              <img
-                src="github-mark.png"
-                width="20"
-                style="vertical-align: middle"
-              />
-              <a
-                href="https://github.com/michaelphillips4/international-forms-validation"
-                style="vertical-align: middle"
-                >see code on github</a
-              >
-            </p>
-          </article>
-        </li>
-        <li>
-          <article class="last">
-            <a href="https://www.youtube.com/@MichaelPhillips4" target="_blank">
-              <h3>Videos</h3></a
-            >
-
-            <p>
-              My YouTube account combines my interest in Wildlife, Music and
-              Photography.
-            </p>
-          </article>
-        </li>
-      </ul>
-    </section>
-    <footer>michael.phillips4@yahoo.co.uk</footer>
+      <div class="youtube-video-container">
+      <iframe
+         src="https://www.youtube.com/embed/videoseries?si=UWXncE6IcfwsvECa&amp;list=PLkn8mzHvQqv2KELhTia69yHXIS0OInQ-e"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe></div>
+    </div>
+    <footer>&copy; 2024 Michael Phillips</footer>
   </body>
 </html>
