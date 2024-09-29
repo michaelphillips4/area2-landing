@@ -1,83 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Michael Phillips</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        text-align: center;
-      }
-      header {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: #333;
-        color: #fff;
-        width:100%;
-      }
-      h1 {
-        margin: 0;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 0 20px;
-        text-align: left;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Michael Phillips</title>
+</head>
 
-      footer {
-        background-color: #333;
-        color: #fff;
-        position: fixed;
-        bottom: 0;
-        padding: 20px 0;
-        width: 100%;
-      }
+<body>
+  <header>
+    <h1>Michael Phillips</h1>
+  </header>
+  <main>
+    <ul>
+      <li>
+        <article>
+          <div class="flex-container">
+            <div>
+              <h3 class="article-header"><a target="_blank"
+                  href="https://area2-documentsstore.s3.eu-west-2.amazonaws.com/index.html">
+                  What Birds Eat Game
+                </a>
+              </h3>
+            </div>
+            <div class="right">
+              <img src="github-mark.png" width="20" style="vertical-align: middle" />
+              <a href="https://github.com/michaelphillips4/WhatBirdsEatGame">
+                see code on github</a>
+            </div>
+          </div>
+          A very minimalist game to guess what different types of birds eat, in javascript in one file!
+          It uses an AWS bucket to store the static files.
 
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-        color: #333;
-      }
+        </article>
+      </li>
 
-      iframe {
-        margin-bottom: 60px;
-       
-      }
-      .youtube-video-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
 
-.youtube-video-container::after {
-  display: block;
-  content: "";
-  padding-top: 56.25%;
-}
 
-.youtube-video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* * {border:1px solid red} */
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Michael Phillips</h1>
-    </header>
 
-    <div class="container">
+      <li>
+        <article>
+          <div class="flex-container">
+            <div>
+              <h3 class="article-header"><a target="_blank"
+                  href="https://tim-vine-joke-machine.s3.eu-west-2.amazonaws.com/index.html">
+                  Tim Vine Jokes
+                </a>
+              </h3>
+            </div>
+            <div class="right">
+              <img src="github-mark.png" width="20" style="vertical-align: middle" />
+              <a href="https://github.com/michaelphillips4/tim-vine-joke-machine">
+                see code on github</a>
+            </div>
+          </div>
+          A react App that selects random <i>Tim Vine Jokes</i>.
+          Hosted on an AWS bucket.
+                  </article>
+
+      </li>
+
+      <li>
+
+        <article>
+          <div class="flex-container">
+            <div>
+              <h3 class="article-header"><a target="_blank" href="https://main.d2gnyf28io54nc.amplifyapp.com/">
+                  Poem Generator
+                </a>
+              </h3>
+            </div>
+            <div class="right">
+              <img src="github-mark.png" width="20" style="vertical-align: middle" />
+              <a href="https://github.com/michaelphillips4/language-oddities">
+                see code on github</a>
+            </div>
+          </div>
+          A <b>react and typescript App</b> that creates grammatically correct nonsense
+          poems. Inspired by an article by <i>Noam Chomsky</i> on grammar
+          validating meaning. <b>React and AWS amplify</b>.
+         
+        </article>
+      </li>
+
+      <li>
+
+
+        <article>
+          <div class="flex-container">
+            <div>
+              <h3 class="article-header"><a target="_blank" href="https://master.dn5mbvfoznlca.amplifyapp.com/">
+                  Eliza Clone
+                </a>
+              </h3>
+            </div>
+            <div class="right">
+              <img src="github-mark.png" width="20" style="vertical-align: middle" />
+              <a href="https://github.com/michaelphillips4/ElizaClone">
+                see code on github</a>
+            </div>
+          </div>
+          This is a simple adaptation of the original in React and Type script.
+
+          <blockquote>ELIZA is an early natural language processing computer program created from 1964 to 1967 at MIT by
+            Joseph Weizenbaum. Created to explore communication between humans and machines, ELIZA simulated
+            conversation by using a pattern matching and substitution methodology that gave users an illusion of
+            understanding on the part of the program, but had no representation that could be considered really
+            understanding what was being said by either party.
+          </blockquote>
+          see : <a href="https://en.wikipedia.org/wiki/ELIZA">https://en.wikipedia.org/wiki/ELIZA</a>
+          <blockquote>
+            It uses the water.css frame work for the style <a
+              href="https://watercss.kognise.dev/">https://watercss.kognise.dev/</a> it is classless and allows you
+            to create smart pages quickly with out the distraction of styles. </p>
+          </blockquote>
+          
+        </article>
+      </li>
+
+    </ul>
+
+    <article>
+      <h2 class="center">Music</h2>
       <p>
         Guitar Music and Wildlife Photography, from around the world and around
         the corner. For more info and bookings please go to
@@ -85,15 +130,16 @@
         <a href="https://www.youtube.com/@michaelphillips4">YouTube</a>
       </p>
       <div class="youtube-video-container">
-      <iframe
-         src="https://www.youtube.com/embed/videoseries?si=UWXncE6IcfwsvECa&amp;list=PLkn8mzHvQqv2KELhTia69yHXIS0OInQ-e"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe></div>
-    </div>
-    <footer>&copy; 2024 Michael Phillips</footer>
-  </body>
+        <iframe
+          src="https://www.youtube.com/embed/videoseries?si=UWXncE6IcfwsvECa&amp;list=PLkn8mzHvQqv2KELhTia69yHXIS0OInQ-e"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+
+    </article>
+  </main>
+  <footer>&copy; 2024 Michael Phillips</footer>
+</body>
 </html>

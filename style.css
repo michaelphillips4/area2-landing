@@ -1,95 +1,96 @@
-* {
-    box-sizing: border-box;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  width:100%;
+  text-align: center;
+}
 
-  :root {
-    --highlightcolor: #ade5f7;
-  }
+h1 {
+  margin: 0;
+}
 
-  body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    text-align: center;
-    font-size: 1.15em;
-    background-color: rgb(247, 247, 247);
-  }
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+ }
 
-  header {
-    background: var(--highlightcolor);
-    border-radius: 15px 15px 0 0;
-  }
+footer {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
 
-  h1,
-  h3,
-  .description {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
 
-  a {
-    font-style: italic;
-    color: black; 
-  }
+article{
+  padding-bottom:20px ;
+}
 
-  h1 {
-    font-size: 5vmax;
-    margin: 0;
-    padding: 20px;
-    text-shadow: 4px 4px 10px grey;
-  }
+iframe {
+  margin-bottom: 60px;
+}
 
- 
-  article {
-    text-align: left;
-    border-bottom: var(--highlightcolor) solid 1px;
-  }
+.youtube-video-container {
+position: relative;
+overflow: hidden;
+width: 80%;
+}
 
-  ul {
-    list-style: none;
-    padding-inline-start: 0;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+.youtube-video-container::after {
+display: block;
+content: "";
+padding-top: 56.25%;
+}
 
-  footer {
-    padding: 15px;
-    width: 100%;
-    background: var(--highlightcolor);
-    position: fixed;
-    bottom: 0;
-    text-shadow: 4px 4px 10px grey;
-  }
+.youtube-video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 80%;
+height: 80%;
+}
 
-  .main {
-    background-color: white;
-    padding-top: 0;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    border: silver solid 1px;
-    border-radius: 15px;
-    margin-bottom: 80px;
-   
-  }
+.center{
+  text-align: center;
+}
 
-  .description {
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.25rem;
-  }
 
-  .last {
-    border-bottom: none;
-  }
+.flex-container {
+  display: flex;
+ }
 
-  @media screen and (max-width: 800px) {
-    .main {
-      width: 100%;
-      border: none;
-      margin-top: 0;
-    }
+ .flex-container > div{
+  flex:50% ;
+ }
 
-    header {
-      border-radius: 0 0 0 0;
-    }
-  }
+ .right{
+  text-align: right;
+  float: right;
+ }
+
+ .article-header{
+  margin-top: 0;
+ }
+
+ hr{
+  width: 10%;
+ }
