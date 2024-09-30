@@ -3,26 +3,27 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  
+
 }
+
 header {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #333;
   color: #fff;
-  width:100%;
+  width: 100%;
   text-align: center;
 }
 
 h1 {
-  margin: 0;
+  margin: 10px;
 }
 
 main {
-  max-width: 800px;
   margin: 20px auto;
   padding: 0 20px;
- }
+  margin-bottom: 150px;
+}
 
 footer {
   background-color: #333;
@@ -41,56 +42,51 @@ a:active {
   color: #333;
 }
 
-article{
-  padding-bottom:20px ;
-}
-
-iframe {
-  margin-bottom: 60px;
+article {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
 }
 
 .youtube-video-container {
-position: relative;
-overflow: hidden;
-width: 80%;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
 }
 
 .youtube-video-container::after {
-display: block;
-content: "";
-padding-top: 56.25%;
+  display: block;
+  content: "";
+  padding-top: 56.25%;
 }
 
 .youtube-video-container iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 80%;
-height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-
 .flex-container {
   display: flex;
- }
+}
 
- .flex-container > div{
-  flex:50% ;
- }
+.flex-container>div {
+  flex: 50%;
+}
 
- .right{
+.right {
   text-align: right;
   float: right;
- }
+}
 
- .article-header{
+.article-header {
   margin-top: 0;
- }
+}
 
- hr{
-  width: 10%;
- }
