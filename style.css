@@ -12,7 +12,7 @@ main{
 h1{
  margin-top: 20px;
  margin-bottom: 20px;
-
+ 
 } 
 
 h5{
@@ -79,3 +79,6 @@ article {
 }
 
 
+@media (max-width:850px) {
+  h1 {font-size :8vw }
+}
