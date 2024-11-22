@@ -3,6 +3,12 @@ body {
   background-color:var(--bg-highlight); 
 }
 
+main{
+  border-radius:  0;
+  box-shadow: none;
+  background-color:var(--bg-highlight); 
+}
+
 h1{
  margin-top: 20px;
  margin-bottom: 20px;
