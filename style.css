@@ -1,48 +1,47 @@
-
-
 body {
   margin: 0;
- }
+}
 
-main{
-  border-radius:  0;
+main {
+  border-radius: 0;
   box-shadow: none;
   background-color: var(--bg-highlight);
 }
 
-h1{
- margin-top: 20px;
- margin-bottom: 20px;
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-} 
-
-h5{
+h5 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-header{
+header {
   padding-top: 1px;
   padding-bottom: 1px;
-   background-color: black;
- color: white;
+  background-color: black;
+  color: white;
 }
-
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-  color: light-dark(#333,white);
+  color: light-dark(#333, white);
 }
 
 article {
   padding: 20px;
   background-color: var(--bg);
   margin: 20px;
-  word-wrap: break-word ;
-  /* border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .2), 0 6px 20px rgba(0, 0, 0, .19); */
+  word-wrap: break-word;
+}
+
+.git-cat {
+  vertical-align: middle;
+  width: 20px;
 }
 
 .youtube-video-container {
@@ -66,12 +65,11 @@ article {
   height: 100%;
 }
 
-
 .flex-container {
   display: flex;
 }
 
-.flex-container>div {
+.flex-container > div {
   flex: 50%;
 }
 
@@ -80,7 +78,20 @@ article {
   float: right;
 }
 
+@media (max-width: 850px) {
+  h1 {
+    font-size: 8vw;
+  }
+}
 
-@media (max-width:850px) {
-  h1 {font-size :8vw }
+@media (prefers-color-scheme: light) {
+  .git-cat {
+    filter: invert(0%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .git-cat {
+    filter: invert(100%);
+  }
 }
