@@ -1,177 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://orca1.orca-tools.com/orca.min.css" />
+    <link rel="stylesheet" href="https://area2.orca-tools.com/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://orca1.orca-tools.com/orca.min.css" />
-   <link rel="stylesheet" href="style.css"> 
-  <title>Michael Phillips</title>
-</head>
+  <body>
+    <header>
+      <h1 class="center">Michael Phillips</h1>
+    </header>
+    <main>
+      <orca-article
+        data-title="Orca Tool Kit"
+        data-url="https://orca1.orca-tools.com/"
+        data-githubUrl="https://github.com/michaelphillips4/orca"
+      >
+        <p>A very minimalist front end tool kit.</p>
+        See
+        <a target="_blank" href="https://orca1.orca-tools.com/">
+          https://orca1.orca-tools.com/
+        </a>
+      </orca-article>
 
-<body> 
- 
-  <header>
-    <h1 class="center">Michael Phillips</h1>
-  </header>
-  <main>
+      <orca-article
+        data-title="What Birds Eat Game"
+        data-url="https://tinyurl.com/3jhaahhs"
+        data-githubUrl="https://github.com/michaelphillips4/WhatBirdsEatGame"
+      >
+        <p>
+          A game to guess what different types of birds eat. Just in <b>html5</b>. It
+          uses an <b>AWS bucket</b> to store the static files.
+        </p>
+        play
+        <a
+          target="_blank"
+          href="https://area2-documentsstore.s3.eu-west-2.amazonaws.com/index.html"
+        >
+          https://tinyurl.com/3jhaahhs
+        </a>
+      </orca-article>
 
-    <article>
-      <div class="flex-container">
-        <div>
-          <h5><a target="_blank"
-              href="https://orca1.orca-tools.com/">
-              Orca Tool Kit
-            </a>
-          </h5>
-        </div>
-        <div class="right">
-          <img src="github-mark.png" class="git-cat"  />
-          <a href="https://github.com/michaelphillips4/orca">
-            see code on github</a>
-        </div>
-      </div>
-      <p>A very minimalist front end tool kit.
-      </p>
-      see <a target="_blank"
-             href="https://orca1.orca-tools.com/">
-             https://orca1.orca-tools.com/
-            </a>
-    </article>
+      <orca-article
+        data-title="Tim Vine Jokes"
+        data-url="https://timvine.orca-tools.com"
+        data-githubUrl="https://github.com/michaelphillips4/tim-vine-joke-machine"
+      >
+        <p>
+          A <b>react App</b> that selects random Tim Vine Jokes. Hosted on an <b>AWS
+          bucket</b>.
+        </p>
+        see
+        <a target="_blank" href="https://timvine.orca-tools.com/">
+          https://timvine.orca-tools.com
+        </a>
+      </orca-article>
 
-
-
-
-    <article>
-      <div class="flex-container">
-        <div>
-          <h5><a target="_blank"
-              href="https://area2-documentsstore.s3.eu-west-2.amazonaws.com/index.html">
-              What Birds Eat Game
-            </a>
-          </h5>
-        </div>
-        <div class="right">
-          <img src="github-mark.png" class="git-cat" />
-          <a href="https://github.com/michaelphillips4/WhatBirdsEatGame">
-            see code on github</a>
-        </div>
-      </div>
-      <p>A very minimalist game to guess what different types of birds eat. Just in html5.
-      It uses an AWS bucket to store the static files.
-      </p>
-      play <a target="_blank"
-             href="https://area2-documentsstore.s3.eu-west-2.amazonaws.com/index.html">
-             https://tinyurl.com/3jhaahhs
-            </a>
-    </article>
-
-        <article>
-          <div class="flex-container">
-            <div>
-              <h5><a target="_blank"
-                  href="https://timvine.orca-tools.com">
-                  Tim Vine Jokes
-                </a>
-              </h5>
-            </div>
-            <div class="right">
-              <img src="github-mark.png" class="git-cat"  />
-              <a href="https://github.com/michaelphillips4/tim-vine-joke-machine">
-                see code on github</a>
-            </div>
-          </div>
-          <p>A react App that selects random <i>Tim Vine Jokes</i>.
-          Hosted on an AWS bucket.</p>
-          see <a target="_blank"
-                  href="https://timvine.orca-tools.com/">
-                  https://timvine.orca-tools.com
-                </a>
-                  </article>
-
-     
-        <article>
-          <div class="flex-container">
-            <div>
-              <h5>
-                <a target="_blank" href="https://main.d2gnyf28io54nc.amplifyapp.com/">
-                  Poem Generator
-                </a>
-              </h5>
-            </div>
-            <div class="right">
-              <img src="github-mark.png" class="git-cat" />
-              <a href="https://github.com/michaelphillips4/language-oddities">
-                see code on github</a>
-            </div>
-          </div>
-          <p>
-          A <b>react and typescript App</b> that creates grammatically correct nonsense
-          poems. Inspired by an article by <i>Noam Chomsky</i> on grammar
-          validating meaning. <b>React and AWS amplify</b>.
-         </p>
-         try <a target="_blank" href="https://main.d2gnyf28io54nc.amplifyapp.com/">
+      <orca-article
+        data-title="Poem Generator"
+        data-url="https://tinyurl.com/ypdfnkms"
+        data-githubUrl="https://github.com/michaelphillips4/language-oddities"
+      >
+        <p>
+          A <b>react and typescript - vite App</b> that creates grammatically correct nonsense
+          poems. Inspired by an article by Noam Chomsky on grammar validating
+          meaning. <b>React and AWS amplify</b>.
+        </p>
+        try
+        <a target="_blank" href="https://main.d2gnyf28io54nc.amplifyapp.com/">
           https://tinyurl.com/ypdfnkms
         </a>
-        </article>
-      
+      </orca-article>
 
+      <orca-article
+        data-title="Eliza Clone"
+        data-url="https://tinyurl.com/mtukp5u4"
+        data-githubUrl="https://github.com/michaelphillips4/ElizaClone"
+      >
+        <p>
+          This is a simple adaptation of the original in <b>React and Type script</b>.
+        </p>
+        <blockquote>
+          ELIZA is an early natural language processing computer program created
+          from 1964 to 1967 at MIT by Joseph Weizenbaum. Created to explore
+          communication between humans and machines, ELIZA simulated
+          conversation by using a pattern matching and substitution methodology
+          that gave users an illusion of understanding on the part of the
+          program, but had no representation that could be considered really
+          understanding what was being said by either party.
+        </blockquote>
+        see :
+        <a href="https://en.wikipedia.org/wiki/ELIZA"
+          >https://en.wikipedia.org/wiki/ELIZA</a
+        >
+        <blockquote>
+          It uses the water.css frame work for the style
+          <a href="https://watercss.kognise.dev/"
+            >https://watercss.kognise.dev/</a
+          >
+          it is classless and allows you to create smart pages quickly with out
+          the distraction of styles.
+        </blockquote>
 
-        <article>
-          <div class="flex-container">
-            <div>
-              <h5>
-                <a target="_blank" href="https://master.dn5mbvfoznlca.amplifyapp.com/">
-                  Eliza Clone
-                </a>
-              </h5>
-            </div>
-            <div class="right">
-              <img src="github-mark.png" class="git-cat"  />
-              <a href="https://github.com/michaelphillips4/ElizaClone">
-                see code on github</a>
-            </div>
+        chat
+        <a target="_blank" href="https://master.dn5mbvfoznlca.amplifyapp.com/">
+          https://tinyurl.com/mtukp5u4
+        </a>
+      </orca-article>
+
+      <article class="center">
+        <h3>Music</h3>
+        <p>
+          Guitar Music and Wildlife Photography, from around the world and
+          around the corner. For more info and bookings please go to
+          <a href="https://www.instagram.com/michaelphillips4/">Instagram</a> or
+          <a href="https://www.youtube.com/@michaelphillips4">YouTube</a>
+        </p>
+        <div class="youtube-video-container">
+          <iframe
+            type="text/html"
+            src="https://www.youtube.com/embed/videoseries?si=UWXncE6IcfwsvECa&amp;list=PLkn8mzHvQqv2KELhTia69yHXIS0OInQ-e"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </article>
+    </main>
+
+    <template id="orca-article-template">
+      <article>
+        <div class="flex-container">
+          <div>
+            <h5>
+              <a target="_blank" class="orca-article-header"> </a>
+            </h5>
           </div>
-          <p>
-          This is a simple adaptation of the original in React and Type script.
+          <div class="right">
+            <img
+              src="https://area2.orca-tools.com/github-mark.png"
+              class="git-cat"
+            />
+            <a class="orca-article-githubUrl"> see code on github</a>
+          </div>
+        </div>
+        <slot id="content"></slot>
+      </article>
+    </template>
 
-          <blockquote>ELIZA is an early natural language processing computer program created from 1964 to 1967 at MIT by
-            Joseph Weizenbaum. Created to explore communication between humans and machines, ELIZA simulated
-            conversation by using a pattern matching and substitution methodology that gave users an illusion of
-            understanding on the part of the program, but had no representation that could be considered really
-            understanding what was being said by either party.
-          </blockquote>
-          see : <a href="https://en.wikipedia.org/wiki/ELIZA">https://en.wikipedia.org/wiki/ELIZA</a>
-          <blockquote>
-            It uses the water.css frame work for the style <a
-              href="https://watercss.kognise.dev/">https://watercss.kognise.dev/</a> it is classless and allows you
-            to create smart pages quickly with out the distraction of styles. </p>
-          </blockquote>
-          
-          chat <a target="_blank" href="https://master.dn5mbvfoznlca.amplifyapp.com/">
-            https://tinyurl.com/mtukp5u4
-          </a>
-        </article>
-      
-
-    <article class="center">
-      <h3>Music</h3>
-      <p>
-        Guitar Music and Wildlife Photography, from around the world and around
-        the corner. For more info and bookings please go to
-        <a href="https://www.instagram.com/michaelphillips4/">Instagram</a> or
-        <a href="https://www.youtube.com/@michaelphillips4">YouTube</a>
-      </p>
-      <div class="youtube-video-container ">
-        <iframe
-        type="text/html" 
-          src="https://www.youtube.com/embed/videoseries?si=UWXncE6IcfwsvECa&amp;list=PLkn8mzHvQqv2KELhTia69yHXIS0OInQ-e"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-          allowfullscreen></iframe>
-      </div>
-    </article>
-  </main>
- 
-</body>
+    <script src="OrcaArticleComponent.js"></script>
+  </body>
 </html>
