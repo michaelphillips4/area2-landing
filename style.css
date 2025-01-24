@@ -67,6 +67,7 @@ article {
 
 .flex-container {
   display: flex;
+  flex-direction: row;
 }
 
 .flex-container > .first {
@@ -90,8 +91,24 @@ article {
 }
 
 @media (max-width: 850px) {
+  main {
+    width: 98vw;
+}
   h1 {
     font-size: 8vw;
+  }
+  h5{
+    text-align: center;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .orca-article-text{
+    margin: 0;
+    margin-top: 10px;
+  }
+  blockquote{
+    margin: 10px;
   }
 }
 
