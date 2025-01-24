@@ -67,20 +67,48 @@ article {
 
 .flex-container {
   display: flex;
+  flex-direction: row;
 }
 
-.flex-container > div {
-  flex: 50%;
+.flex-container > .first {
+ flex: 75%;
+} 
+
+.flex-container > .second {
+  flex: 25%;
+  text-align: end;
 }
 
-.right {
-  text-align: right;
-  float: right;
+.app-image{
+  width:100%;
+  object-fit: contain; 
+  margin-top: 10px;
+  border-radius: 12%;
+}
+
+.orca-article-text{
+  margin: 30px;
 }
 
 @media (max-width: 850px) {
+  main {
+    width: 98vw;
+}
   h1 {
     font-size: 8vw;
+  }
+  h5{
+    text-align: center;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .orca-article-text{
+    margin: 0;
+    margin-top: 10px;
+  }
+  blockquote{
+    margin: 10px;
   }
 }
 
