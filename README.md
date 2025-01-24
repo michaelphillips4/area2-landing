@@ -11,7 +11,7 @@ This will covers most real world use cases.
 ## Setup 
 https://www.npmjs.com/package/serve
 ```
-npm i serve
+npm install --global serve
 serve
 ```
 

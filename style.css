@@ -69,13 +69,24 @@ article {
   display: flex;
 }
 
-.flex-container > div {
-  flex: 50%;
+.flex-container > .first {
+ flex: 75%;
+} 
+
+.flex-container > .second {
+  flex: 25%;
+  text-align: end;
 }
 
-.right {
-  text-align: right;
-  float: right;
+.app-image{
+  width:100%;
+  object-fit: contain; 
+  margin-top: 10px;
+  border-radius: 12%;
+}
+
+.orca-article-text{
+  margin: 30px;
 }
 
 @media (max-width: 850px) {

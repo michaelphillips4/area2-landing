@@ -4,7 +4,7 @@
     <title>Michael Phillips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://orca1.orca-tools.com/orca.min.css" />
-    <link rel="stylesheet" href="https://area2.orca-tools.com/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -17,52 +17,47 @@
       data-title="Larder Ai"
       data-url="https://main.d31snhlh3nzl2z.amplifyapp.com/"
       data-githubUrl="https://github.com/michaelphillips4/LarderAi"
+      data-image="images/cook.jpeg"
     >
-      <p>Is an AI to suggest recipes from a list of foods. 
+      Is an AI to suggest recipes from a list of foods. 
         This is an <b>AWS serverless</b> web application powered by Generative AI using <b>Amazon Bedrock</b> and the <b>Claude 3 Sonnet foundation model</b>.
         It uses <b>AWS Amplify</b>, <b>AWS Cognito</b> a <b>GraphQL API</b> built with <b>AWS AppSync</b>, <b>AWS Lambda</b>, and <b>Amazon Bedrock</b> in the back end. The front end uses <b>React vite</b> and some <b>amplify UI components</b>. 
         Please create an account to access the app. 
-      </p>
-      <a target="_blank" href="https://main.d31snhlh3nzl2z.amplifyapp.com/">
-        https://main.d31snhlh3nzl2z.amplifyapp.com/
-      </a>
+      
     </orca-article>
 
       <orca-article
         data-title="Tim Vine Jokes"
         data-url="https://timvine.orca-tools.com"
         data-githubUrl="https://github.com/michaelphillips4/tim-vine-joke-machine"
+        data-image="images/jester.jpeg"
       >
-        <p>
+       
           A <b>react App</b> that selects random Tim Vine Jokes. Hosted on an <b>AWS
           bucket</b>.
-        </p>
-        see
-        <a target="_blank" href="https://timvine.orca-tools.com/">
-          https://timvine.orca-tools.com
-        </a>
+    
+       
       </orca-article>
 
       <orca-article
         data-title="Poem Generator"
         data-url="https://tinyurl.com/ypdfnkms"
         data-githubUrl="https://github.com/michaelphillips4/language-oddities"
+        data-image="images/poet.jpeg"
       >
-        <p>
+       
           A <b>react and typescript - vite App</b> that creates grammatically correct nonsense
           poems. Inspired by an article by Noam Chomsky on grammar validating
           meaning. <b>React and AWS amplify</b>.
-        </p>
-        try
-        <a target="_blank" href="https://main.d2gnyf28io54nc.amplifyapp.com/">
-          https://tinyurl.com/ypdfnkms
-        </a>
+     
+       
       </orca-article>
 
       <orca-article
         data-title="Eliza Clone"
         data-url="https://tinyurl.com/mtukp5u4"
         data-githubUrl="https://github.com/michaelphillips4/ElizaClone"
+        data-image="images/doctor.jpeg"
       >
         <p>
           This is a simple adaptation of the original in <b>React and Type script</b>.
@@ -90,9 +85,7 @@
         </blockquote>
 
         chat
-        <a target="_blank" href="https://master.dn5mbvfoznlca.amplifyapp.com/">
-          https://tinyurl.com/mtukp5u4
-        </a>
+       
       </orca-article>
 
 
@@ -105,30 +98,24 @@
         data-title="Orca Tool Kit"
         data-url="https://orca1.orca-tools.com/"
         data-githubUrl="https://github.com/michaelphillips4/orca"
+        data-image="images/orca.jpeg"
       >
-        <p>An attempt to make a very minimalist front end tool kit. </p>
-        See
-        <a target="_blank" href="https://orca1.orca-tools.com/">
-          https://orca1.orca-tools.com/
-        </a>
+       An attempt to make a very minimalist front end tool kit. 
+        
       </orca-article>
 
       <orca-article
         data-title="What Birds Eat Game"
         data-url="https://tinyurl.com/3jhaahhs"
         data-githubUrl="https://github.com/michaelphillips4/WhatBirdsEatGame"
+        data-image="images/birdwatcher.jpeg"
       >
-        <p>
+  
           A game to guess what different types of birds eat. Just in <b>html5</b>. It
           uses an <b>AWS bucket</b> to store the static files.
-        </p>
-        play
-        <a
-          target="_blank"
-          href="https://area2-documentsstore.s3.eu-west-2.amazonaws.com/index.html"
-        >
-          https://tinyurl.com/3jhaahhs
-        </a>
+      
+       
+       
       </orca-article>
 
 
@@ -157,20 +144,26 @@
     <template id="orca-article-template">
       <article>
         <div class="flex-container">
-          <div>
+          <div class="first">
             <h5>
               <a target="_blank" class="orca-article-header"> </a>
             </h5>
-          </div>
-          <div class="right">
-            <img
+            <p class="orca-article-text">
+              <slot id="content"></slot>
+            </p>
+            <p>
+              <img
               src="https://area2.orca-tools.com/github-mark.png"
-              class="git-cat"
-            />
-            <a class="orca-article-githubUrl"> see code on github</a>
+              class="git-cat"/> <a class="orca-article-githubUrl"> see code on github</a> 
+            </p>
+            try app <a target="_blank" class="orca-article-url"> </a>
+          </div>
+          <div class="second">
+            <img class="app-image" />
           </div>
         </div>
-        <slot id="content"></slot>
+       
+       
       </article>
     </template>
 
