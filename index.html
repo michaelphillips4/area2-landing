@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://orca1.orca-tools.com/orca.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="OrcaArticleComponent.js" defer></script>
+    <meta name="description" content="Developer Portfolio for Michael Phillips.">
   </head>
 
   <body>
@@ -17,6 +19,7 @@
         data-url="https://main.d31snhlh3nzl2z.amplifyapp.com/"
         data-githubUrl="https://github.com/michaelphillips4/LarderAi"
         data-image="images/cook.jpeg"
+        data-image-text="Robot cooking in a kitchen" 
       >
         Is an AI to suggest recipes from a list of foods. This is an
         <b>AWS serverless</b> web application powered by Generative AI using
@@ -33,6 +36,7 @@
         data-url="https://main.d29q1pyma87412.amplifyapp.com/"
         data-githubUrl="https://github.com/michaelphillips4/birds-beak-game"
         data-image="images/birdwatcher.jpeg"
+        data-image-text="Bird watcher with binoculars" 
       >
         A game to guess what different types of birds eat. Created with <b>React and
         Typescript</b> using <b>Vite</b>. It is single page static app deployed to <b>AWS Amplify</b> using <b>DC/CI</b> on <b>GitHub</b>.
@@ -43,6 +47,7 @@
         data-url="https://timvine.orca-tools.com"
         data-githubUrl="https://github.com/michaelphillips4/tim-vine-joke-machine"
         data-image="images/jester.jpeg"
+        data-image-text="Jester making jokes" 
       >
         A <b>react App</b> that selects random Tim Vine Jokes. Hosted on an
         <b>AWS bucket</b>.
@@ -53,6 +58,7 @@
         data-url="https://tinyurl.com/ypdfnkms"
         data-githubUrl="https://github.com/michaelphillips4/language-oddities"
         data-image="images/poet.jpeg"
+        data-image-text="Robot creating poems" 
       >
         A <b>react and typescript - vite App</b> that creates grammatically
         correct nonsense poems. Inspired by an article by Noam Chomsky on
@@ -64,6 +70,7 @@
         data-url="https://tinyurl.com/mtukp5u4"
         data-githubUrl="https://github.com/michaelphillips4/ElizaClone"
         data-image="images/doctor.jpeg"
+        data-image-text="Therapist talking to a Robot" 
       >
         <p>
           This is a simple adaptation of the original in
@@ -97,38 +104,20 @@
         data-url="https://orca1.orca-tools.com/"
         data-githubUrl="https://github.com/michaelphillips4/orca"
         data-image="images/orca.jpeg"
+        data-image-text="An orca whale" 
       >
         An attempt to make a very minimalist front end tool kit.
       </orca-article>
-
-      <article class="center">
-        <h3>Music</h3>
-        <p>
-          Guitar Music and Wildlife Photography, from around the world and
-          around the corner. For more info and bookings please go to
-          <a href="https://www.instagram.com/michaelphillips4/">Instagram</a> or
-          <a href="https://www.youtube.com/@michaelphillips4">YouTube</a>
-        </p>
-        <div class="youtube-video-container">
-          <iframe
-            type="text/html"
-            src="https://www.youtube.com/embed/videoseries?si=UWXncE6IcfwsvECa&amp;list=PLkn8mzHvQqv2KELhTia69yHXIS0OInQ-e"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-            allowfullscreen=""
-          ></iframe>
-        </div>
-      </article>
+   
     </main>
 
     <template id="orca-article-template">
       <article>
         <div class="flex-container">
           <div class="first">
-            <h5>
-              <a target="_blank" class="orca-article-header"> </a>
-            </h5>
+            <h2><small>
+              <a target="_blank" class="orca-article-header"> </a></small>
+            </h2>
             <p class="orca-article-text">
               <slot id="content"></slot>
             </p>
@@ -136,6 +125,7 @@
               <img
                 src="https://area2.orca-tools.com/github-mark.png"
                 class="git-cat"
+                alt="git hub cat"
               />
               <a class="orca-article-githubUrl"> see code on github</a>
             </p>
@@ -149,6 +139,6 @@
       </article>
     </template>
 
-    <script src="OrcaArticleComponent.js"></script>
+  
   </body>
 </html>
