@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Michael Phillips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://orca1.orca-tools.com/orca.min.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="OrcaArticleComponent.js" defer></script>
-    <meta name="description" content="Developer Portfolio for Michael Phillips.">
+    <meta
+      name="description"
+      content="Developer Portfolio for Michael Phillips."
+    />
   </head>
 
   <body>
@@ -16,11 +19,25 @@
     </header>
     <main>
       <orca-article
+        data-title="Meditation Interval Timer"
+        data-url="https://www.meditationintervaltimer.co.uk/"
+        data-githubUrl="https://github.com/michaelphillips4/MeditationIntervalTimer"
+        data-image="images/lotus.jpeg"
+        data-image-text="A lotus flower"
+      >
+        This is a simple meditation timer that allows you to set different
+        sections for your meditation. You can customize the duration of each
+        section and save your favorite meditation for later use. It is created
+        using react vite with typescript and is a pwa that will still run
+        offline once the app has been downloaded.
+      </orca-article>
+
+      <orca-article
         data-title="Larder Ai"
         data-url="https://main.d31snhlh3nzl2z.amplifyapp.com/"
         data-githubUrl="https://github.com/michaelphillips4/LarderAi"
         data-image="images/cook.jpeg"
-        data-image-text="Robot cooking in a kitchen" 
+        data-image-text="Robot cooking in a kitchen"
       >
         Is an AI to suggest recipes from a list of foods. This is an
         <b>AWS serverless</b> web application powered by Generative AI using
@@ -37,10 +54,11 @@
         data-url="https://main.d29q1pyma87412.amplifyapp.com/"
         data-githubUrl="https://github.com/michaelphillips4/birds-beak-game"
         data-image="images/birdwatcher.jpeg"
-        data-image-text="Bird watcher with binoculars" 
+        data-image-text="Bird watcher with binoculars"
       >
-        A game to guess what different types of birds eat. Created with <b>React and
-        Typescript</b> using <b>Vite</b>. It is single page static app deployed to <b>AWS Amplify</b> using <b>DC/CI</b> on <b>GitHub</b>.
+        A game to guess what different types of birds eat. Created with
+        <b>React and Typescript</b> using <b>Vite</b>. It is single page static
+        app deployed to <b>AWS Amplify</b> using <b>DC/CI</b> on <b>GitHub</b>.
       </orca-article>
 
       <orca-article
@@ -48,7 +66,7 @@
         data-url="https://timvine.orca-tools.com"
         data-githubUrl="https://github.com/michaelphillips4/tim-vine-joke-machine"
         data-image="images/jester.jpeg"
-        data-image-text="Jester making jokes" 
+        data-image-text="Jester making jokes"
       >
         A <b>react App</b> that selects random Tim Vine Jokes. Hosted on an
         <b>AWS bucket</b>.
@@ -59,7 +77,7 @@
         data-url="https://tinyurl.com/ypdfnkms"
         data-githubUrl="https://github.com/michaelphillips4/language-oddities"
         data-image="images/poet.jpeg"
-        data-image-text="Robot creating poems" 
+        data-image-text="Robot creating poems"
       >
         A <b>react and typescript - vite App</b> that creates grammatically
         correct nonsense poems. Inspired by an article by Noam Chomsky on
@@ -71,7 +89,7 @@
         data-url="https://tinyurl.com/mtukp5u4"
         data-githubUrl="https://github.com/michaelphillips4/ElizaClone"
         data-image="images/doctor.jpeg"
-        data-image-text="Therapist talking to a Robot" 
+        data-image-text="Therapist talking to a Robot"
       >
         <p>
           This is a simple adaptation of the original in
@@ -105,45 +123,26 @@
         data-url="https://orca1.orca-tools.com/"
         data-githubUrl="https://github.com/michaelphillips4/orca"
         data-image="images/orca.jpeg"
-        data-image-text="An orca whale" 
+        data-image-text="An orca whale"
       >
         An attempt to make a very minimalist front end tool kit.
       </orca-article>
-   
-
-       <orca-article
-        data-title="Meditation Interval Timer"
-        data-url="https://www.meditationintervaltimer.co.uk/"
-        data-githubUrl="https://github.com/michaelphillips4/MeditationIntervalTimer"
-        data-image="images/lotus.jpeg"
-        data-image-text="A lotus flower" 
-      >
-     This is a simple meditation timer that allows you to set different sections for your meditation. 
-     You can customize the duration of each section and save your favorite meditation for later use.
-     It is created using react vite with typescript and is a 
-     pwa that will still run offline once the app has been downloaded.
-      </orca-article>
-
-
-
     </main>
 
     <template id="orca-article-template">
       <article>
         <div class="flex-container">
           <div class="first">
-            <h2><small>
-              <a target="_blank" class="orca-article-header"> </a></small>
+            <h2>
+              <small>
+                <a target="_blank" class="orca-article-header"> </a
+              ></small>
             </h2>
             <p class="orca-article-text">
               <slot id="content"></slot>
             </p>
             <p>
-              <img
-                src="github-mark.png"
-                class="git-cat"
-                alt="git hub cat"
-              />
+              <img src="github-mark.png" class="git-cat" alt="git hub cat" />
               <a class="orca-article-githubUrl"> see code on github</a>
             </p>
             click here to see app:
@@ -155,7 +154,5 @@
         </div>
       </article>
     </template>
-
-  
   </body>
 </html>
